@@ -36,5 +36,9 @@ The London neighbourhood name and location data are taken from https://en.wikipe
 The "List of boroughs and local authorities" table on the website was used to get names and coordinates of the London neighbourhoods.
 
 Data on venues was acquired using the Foursquare API (https://foursquare.com/). 
-Venue data was collected for each neighbourhood location using a search radius of 500 meters and an upper limit of 100 found venues. 
+Venue data was collected for each neighbourhood location, as well as for the user-supplied location, using a search radius of 500 meters and an upper limit of 100 found venues. 
 Venue data was collected using personal Foursquare developers account credentials.
+
+The venue data was then summarised for each venue type, such that a table of venue occurrence counts was created.
+The venue data for each neighbourhood was used to cluster the neighbourhoods according to venue count similarity.
+Finally, the neighbourhoods were ranked according to their clustering distance from the user-supplied location. 
